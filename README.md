@@ -1,15 +1,46 @@
 # Rexo = RTL + Hexo 
+[Live Example](https://bluemix.github.io/)
 
 Rexo is a customization of [Vexo](https://github.com/yanm1ng/hexo-theme-vexo)
-
-[Live Example](https://bluemix.github.io/)
 
 ## Features
 
 * RTL (e.g., Arabic, Hebrew, and Persian)
-* Responsive
 * Disqus comments
-* SEO
+* Emoji left sidebar
+
+
+
+## Post
+
+The **front-matter** of a post looks like that:
+
+```yaml
+---
+title: زهرة النرجس
+date: 2017-07-27 10:42:29
+lang: ar
+direction: rtl
+tags:
+ - أزهار
+ - نباتات
+---
+```
+
+  Please note
+
+```
+{% raw %}
+ <div dir="rtl">
+{% endraw %}
+
+كتابتك العربية
+
+{% raw %}
+ </div>
+{% endraw %}
+```
+  
 
 ## Install
 
@@ -18,7 +49,7 @@ Rexo is a customization of [Vexo](https://github.com/yanm1ng/hexo-theme-vexo)
    ```
    cd your-hexo-folder
 
-   git clone https://github.com/bluemix/rexo.git themes/rexo
+   git clone https://github.com/bluemix/hexo-theme-rexo.git themes/rexo
 
    cp -R themes/rexo/_source/* source/
    ```
@@ -42,19 +73,7 @@ cd themes/rexo
 git pull
 ```
 
-## Post
 
-The **front-matter** of a post looks like that:
-
-```
----
-title: "Hello World"
-date: 2016-06-10 23:00
-tags:
- - Movies
- - Life
----
-```
 
 ## Logo
 You can replace your own logo in `themes/source/css/images` 

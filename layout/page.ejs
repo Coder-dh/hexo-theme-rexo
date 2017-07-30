@@ -17,9 +17,7 @@
 
       <!-- <a href="<%- page.permalink %>#disqus_thread" class="article-comment-link"><%= __('comment') %></a> -->
 
-    <% if (theme.comment.disqus) { 
-      console.log("will render disqus comments")
-      %>
+    <% if (theme.comment.disqus) { %>
     <section id="comments"><%- partial('comment/disqus', { script: true }) %></section>
     <% } %>
 

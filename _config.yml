@@ -28,7 +28,11 @@ about:
 customize:
     sidebar: right # sidebar position, options: left, right or leave it empty
 
-
+deploy:
+  type: git
+  repo: <repository url>
+  branch: [branch]
+  message: [message]
 
 # Miscellaneous
 miscellaneous:
@@ -39,15 +43,15 @@ miscellaneous:
         - 📗
       - link: 
         - Quotes | حكم
-        - http://fb.com/bluemix
+        - /quotes/
         - 📝
       - link: 
         - Songs & Music | موسيقى و أغاني
-        - http://twitter.com/bluemix2
+        - /music
         - 🎵
       - link: 
         - Inspired by | أشخاص أحبهم
-        - http://instagram.com/bluemix
+        - /inspired
         - 💖
 
 
