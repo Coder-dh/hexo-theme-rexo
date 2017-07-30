@@ -1,7 +1,10 @@
 # Rexo = RTL + Hexo 
 [Live Example](https://bluemix.github.io/)
 
-Rexo is a customization of [Vexo](https://github.com/yanm1ng/hexo-theme-vexo)
+Rexo is a minimally customized version of [Vexo](https://github.com/yanm1ng/hexo-theme-vexo)
+
+  ![screenshot](screenshot.png)
+
 
 ## Features
 
@@ -28,20 +31,20 @@ tags:
 ```
 
   Please note
-
-```
-{% raw %}
- <div dir="rtl">
-{% endraw %}
-
-كتابتك العربية
-
-{% raw %}
- </div>
-{% endraw %}
-```
   
+  You can use [rtl](dfdf) and [ltr]() plugin tags to allow mixed wirtings, i.e.,
+```
+مقتطفات من بعض الحكم
 
+{% ltr %}
+“A small leak will sink a great ship.” - Benjamin Franklin
+{% endltr %}
+
+"لو أنك عشتَ في الماضي و تصرفت كأنك في الماضي ، سوف يكون صعباً على المُستقبلِ أن يراكَ." - Body of Lies
+
+```
+
+  ![mixied-writigs](mixed-writings.png)
 ## Install
 
 1. Download/Checkout this theme into your project
@@ -66,12 +69,6 @@ tags:
 
 4. That's all , hope you will like :)
 
-## Update
-
-```
-cd themes/rexo
-git pull
-```
 
 
 
