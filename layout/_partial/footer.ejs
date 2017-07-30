@@ -1,8 +1,9 @@
 <footer class="app-footer">
   <p class="copyright">
-    &copy; <%= new Date().getFullYear() %> | Proudly powered by <a href="https://hexo.io" target="_blank">Hexo</a>
+    &copy; <%= new Date().getFullYear() %> | <%- __('words.powered_by') %>
+           <a href="https://hexo.io" target="_blank"><%- __('words.hexo') %></a>
     <br>
-    Theme by <a href="https://github.com/yanm1ng">yanm1ng</a>
+    <a href="https://github.com/bluemix"><%-config.author%></a>
   </p>
 </footer>
 

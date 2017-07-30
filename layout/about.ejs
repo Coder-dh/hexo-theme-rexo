@@ -1,48 +1,94 @@
-<div id="about-banner" style="background-image: url(<%- theme.about.banner %>)"></div>
+<div id="about-banner"></div>
 <div class="author">
   <div class="head">
     <img src="<%- theme.about.avatar %>" />
   </div>
   <h3><%- config.author %></h3>
-  <p class="discription"><%- theme.about.description %></p>
+
+
+  <center>
+    <table >
+      <tr>
+        <td align="right">عبد المؤمن كاظم</td>
+        <td align="left">AbdElmomen Kadhim</td>
+      </tr>
+      <tr>
+        <td align="right">بَـرمِج نفسك على البرمجة</td>
+        <td align="left">Program your self to program</td>
+      </tr>
+      <tr>
+        <td align="right">"أطلب العِلمَ من المَهدِ إلى اللحد"</td>
+        <td align="left">Never stop learning...</td>
+      </tr>
+      <tr>
+        <td align="right">إقرأ</td>
+        <td align="left">Read</td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center"><%- theme.about.description %></td>
+      </tr>
+    </table>
+  </center>
+
+
   <section class="share-icons">
-    <% if (config.weibo_username) { %>
-      <a class="icon-weibo" href="http://weibo.com/<%- config.weibo_username %>" target="_blank">
-        <span class="fa-stack fa-lg">
-          <i class="fa fa-circle fa-stack-2x"></i>
-          <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
-        </span>
-      </a>
-    <% } %>
-    <% if (config.twitter_username) { %>
-      <a class="icon-twitter" href="https://twitter.com/<%- config.twitter_username %>" target="_blank">
-        <span class="fa-stack fa-lg">
-          <i class="fa fa-circle fa-stack-2x"></i>
-          <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-        </span>
-      </a>
-    <% } %>
-    <% if (config.github_username) { %>
-      <a class="icon-github" href="https://github.com/<%- config.github_username %>" target="_blank">
-        <span class="fa-stack fa-lg">
+
+    <% if (config.social.github) { %>
+      <a class="icon-github" href="<%- config.social.github %>" target="_blank">
+        <span class="fa-stack fa">
           <i class="fa fa-circle fa-stack-2x"></i>
           <i class="fa fa-github fa-stack-1x fa-inverse"></i>
         </span>
       </a>
     <% } %>
-    <% if (config.zhihu_username) { %>
-      <a class="icon-zhihu" href="https://www.zhihu.com/people/<%- config.zhihu_username %>" target="_blank">
-        <span class="fa-stack fa-lg">
+    <% if (config.social.stackoverflow) { %>
+      <a class="icon-stackoverflow" href="<%- config.social.stackoverflow %>" target="_blank">
+        <span class="fa-stack fa">
           <i class="fa fa-circle fa-stack-2x"></i>
-          <i class="fa fa-stack-1x fa-inverse">知</i>
+          <i class="fa fa-stack-overflow fa-stack-1x fa-inverse"></i>
         </span>
       </a>
     <% } %>
+    <% if (config.social.twitter) { %>
+      <a class="icon-twitter" href="<%- config.social.twitter %>" target="_blank">
+        <span class="fa-stack fa">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+        </span>
+      </a>
+    <% } %>
+    <% if (config.social.facebook) { %>
+      <a class="icon-facebook" href="<%- config.social.facebook %>" target="_blank">
+        <span class="fa-stack fa">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+        </span>
+      </a>
+    <% } %>
+     <% if (config.social.instagram) { %>
+      <a class="icon-instagram" href="<%- config.social.instagram %>" target="_blank">
+        <span class="fa-stack fa">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+        </span>
+      </a>
+    <% } %> 
+     <% if (config.social.linkedin) { %>
+      <a class="icon-linkedin" href="<%- config.social.linkedin %>" target="_blank">
+        <span class="fa-stack fa">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+        </span>
+      </a>
+    <% } %> 
   </section>
 </div>
 
 <script>
   (function () {
+    var url = '<%= config.url %>/<%= page.path %>';
+    $('#about-banner').geopattern(url)
+
     $('.header').removeClass('fixed-header')
     var windowH = $(window).height();
     var author = $('.author')
