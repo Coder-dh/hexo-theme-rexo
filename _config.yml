@@ -28,11 +28,7 @@ about:
 customize:
     sidebar: right # sidebar position, options: left, right or leave it empty
 
-deploy:
-  type: git
-  repo: https://github.com/bluemix/bluemix.github.io.git
-  branch: gh-pages
-  message: "deploying with rexo theme"
+
 
 # Miscellaneous
 miscellaneous:
