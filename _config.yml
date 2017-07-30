@@ -30,9 +30,9 @@ customize:
 
 deploy:
   type: git
-  repo: <repository url>
-  branch: [branch]
-  message: [message]
+  repo: https://github.com/bluemix/bluemix.github.io.git
+  branch: gh-pages
+  message: "deploying with rexo theme"
 
 # Miscellaneous
 miscellaneous:
