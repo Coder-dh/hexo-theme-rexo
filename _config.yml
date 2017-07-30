@@ -1,6 +1,6 @@
 author: blueMix
 description: مدونة عبد المؤمن
-keyword: hexo-theme, rexo
+keywords: hexo-theme, rexo, rtl, multilingual
 
 menu:
 #  🏠: /
@@ -28,14 +28,7 @@ about:
 customize:
     sidebar: right # sidebar position, options: left, right or leave it empty
 
-# Widgets
-widgets:
-    # - recent_posts
-    # - category
-    # - tag
-    # - tagcloud
-    # - archive
-    - links
+
 
 # Miscellaneous
 miscellaneous:
