@@ -30,9 +30,9 @@ tags:
 ---
 ```
 
-  Please note
+  **Please note**
   
-  You can use [rtl](dfdf) and [ltr]() plugin tags to allow mixed wirtings, i.e.,
+  You can use [rtl](https://github.com/bluemix/hexo-tag-rtl) and [ltr](https://github.com/bluemix/hexo-tag-ltr) plugin tags to allow mixed wirtings, i.e.,
 ```
 مقتطفات من بعض الحكم
 

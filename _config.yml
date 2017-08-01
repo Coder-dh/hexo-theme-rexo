@@ -2,6 +2,11 @@ author: blueMix
 description: مدونة عبد المؤمن
 keywords: hexo-theme, rexo, rtl, multilingual
 
+
+theme_name: Rexo
+theme_url: https://github.com/bluemix/hexo-theme-rexo
+
+
 menu:
 #  🏠: /
 #  🏷: /tags/
@@ -15,9 +20,10 @@ highlight:
   tomorrow
 
 
+
 # Comment
 comment:
-    disqus: disqus_FoW5JlagXA
+    disqus: bluemixme
 
 
 about: 

@@ -2,7 +2,11 @@
   <h2><%- page.title %></h2>
 
 </div>
+
+
+
 <main class="app-body">
+
   <article class="post-article">
     <section class="markdown-content"   dir="<%- page.direction %>"><%- page.content %></section>
     
@@ -17,10 +21,14 @@
 
       <!-- <a href="<%- page.permalink %>#disqus_thread" class="article-comment-link"><%= __('comment') %></a> -->
 
-    <% if (theme.comment.disqus) { %>
-    <section id="comments"><%- partial('comment/disqus', { script: true }) %></section>
+    <% if (theme.comment.disqus){ %>
+      <section id="comments">
+        <%- partial('comment/disqus', { script: true }) %>
+        <div id="disqus_thread">
+          <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </div>
+      </section>
     <% } %>
-
 
 
   </article>
