@@ -57,20 +57,30 @@ tags:
    cp -R themes/rexo/_source/* source/
    ```
 
-2. Modify `_config.yml` with your own info. look like this
+2. Edit your `_config.yml` theme paramters with `rexo`
+3. Modify the theme's [`_config.yml`](/_config.yml) with your own info
+
+    About page can be fount at [about.ejs](/layout/about.ejs), that has parameters from
+    the theme's [`_config.yml`](/_config.yml) 
 
    ```
-   themes: rexo
+    # Comment
+    comment:
+        disqus: bluemixme
+
+    about: 
+      avatar: https://avatars3.githubusercontent.com/u/3332274?v=4&s=460
+      description: Peace  ☮️  السلام 
+      long_description:
+    social:
+      github: https://github.com/bluemix
+      github_username: bluemix
+      stackoverflow: https://stackoverflow.com/users/1150190/abdulmomen-عبدالمؤمن
+      twitter: https://twitter.com/bluemix2
+      facebook: https://fb.com/bluemix
+      linkedin: https://www.linkedin.com/in/bluemix2
+      instagram: https://instagram.com/bluemix
    ```
-
-   Here theme's name must same as the theme folder name.
-
-3. Or you can copy my theme `_config.yml` into you hexo blog directory , replace default `_config.yml`
-
-4. That's all , hope you will like :)
-
-
-
 
 ## Logo
 You can replace your own logo in `themes/source/css/images` 

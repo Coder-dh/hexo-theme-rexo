@@ -1,12 +1,8 @@
 <div id="article-banner">
   <h2><%- page.title %></h2>
-
 </div>
 
-
-
 <main class="app-body">
-
   <article class="post-article">
     <section class="markdown-content"   dir="<%- page.direction %>"><%- page.content %></section>
     
@@ -14,12 +10,10 @@
 
     <% if (page.tags && page.tags.length) { %>
       <div class="tags"    dir="<%- page.direction %>">
-        <!-- <span><%- __('words.tags') %></span> -->
         <%- partial('_partial/tag', { tags: page.tags }) %>
       </div>
     <% } %>
 
-      <!-- <a href="<%- page.permalink %>#disqus_thread" class="article-comment-link"><%= __('comment') %></a> -->
 
     <% if (theme.comment.disqus){ %>
       <section id="comments">
@@ -29,8 +23,6 @@
         </div>
       </section>
     <% } %>
-
-
   </article>
 </main>
 

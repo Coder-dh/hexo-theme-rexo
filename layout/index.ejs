@@ -7,9 +7,6 @@
 
 <main class="app-body">
 
-
-
-
     <% page.posts.each(function(post) { %>
     <article class="article-card" dir="<%- post.direction %>">
       <h2 class="article-head">
@@ -20,15 +17,6 @@
       <% } %>
       <p class="article-date"><%- date(post.date, "LL") %></p>
 
-
-      <!-- <div class="article-summary">
-        <% if (post.excerpt) { %>
-          <%- post.excerpt %>
-        <% } else { %>
-          <%- truncate(strip_html(post.content), { length: 150, omission: ' ...' }) %>
-        <% } %>
-      </div>
-      <a class="more" href="<%- url_for(post.path) %>"><%- theme.excerpt_link %></a> -->
     </article>
   <% }) %>
 
