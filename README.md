@@ -1,5 +1,9 @@
+> Related post: [Multilingual blogging with Hexo](http://bluemix.me/en/2017/multilingual-blogging-with-Hexo/)
+
 # Rexo = RTL + Hexo 
 [Live Example](https://bluemix.github.io/)
+
+
 
 Rexo is a minimally customized version of [Vexo](https://github.com/yanm1ng/hexo-theme-vexo)
 
