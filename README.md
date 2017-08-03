@@ -1,6 +1,6 @@
 > Related post: [Multilingual blogging with Hexo](http://bluemix.me/en/2017/multilingual-blogging-with-Hexo/)
 
-# Rexo = RTL + Hexo 
+## Rexo = RTL + Hexo 
 [Live Example](https://bluemix.github.io/)
 
 
