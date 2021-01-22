@@ -40,10 +40,6 @@ tags:
 ```
 مقتطفات من بعض الحكم
 
-{% ltr %}
-“A small leak will sink a great ship.” - Benjamin Franklin
-{% endltr %}
-
 "لو أنك عشتَ في الماضي و تصرفت كأنك في الماضي ، سوف يكون صعباً على المُستقبلِ أن يراكَ." - Body of Lies
 
 ```
